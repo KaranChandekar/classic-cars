@@ -1,0 +1,21 @@
+/* Common Styles */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Special Elite" cursive;
+  font-weight: 400;
+}
+
+/* By default 1rem == 16px */
+html {
+  font-size: 62.5%; /* Now 1rem == 10px */
+}
+
+body {
+  background-color: #ccc;
+}
+/* End of Common Styles */
