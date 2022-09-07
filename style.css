@@ -13,10 +13,12 @@
 /* By default 1rem == 16px */
 html {
   font-size: 62.5%; /* Now 1rem == 10px */
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #ccc;
+  padding-right: 3rem;
 }
 
 .center {
@@ -95,3 +97,38 @@ body {
   color: #111;
 }
 /* End of Navbar */
+
+/* Common Section Styles */
+.wrapper {
+  width: 100%;
+  perspective: 50rem;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: #efefef;
+  position: relative;
+  left: 0;
+  margin-bottom: 3rem;
+  transform-origin: left;
+  box-shadow: 0.5rem 0.5rem 1rem #aaa;
+  padding: 5rem 0;
+  transition: left 0.5s, transform 0.5s;
+}
+
+section.change {
+  left: 15vw;
+  transform: rotateY(10deg);
+}
+
+.section-heading {
+  font-size: 10rem;
+  font-weight: bolder;
+  color: #fff;
+  margin-bottom: 10rem;
+  letter-spacing: 1rem;
+  text-align: center;
+  text-shadow: 0.3rem 0.3rem 0.5rem #555;
+}
+/* End of Common Section Styles */
