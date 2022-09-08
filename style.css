@@ -235,3 +235,64 @@ section.change {
   box-shadow: 0.5rem 0.5rem 1rem #111;
 }
 /* End of Section 3 */
+
+/* Section 4 */
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery {
+  margin: 10rem 0;
+  perspective: 10rem;
+}
+
+.gallery-shelf {
+  width: 80%;
+  height: 3rem;
+  background-color: rgba(38, 126, 199, 0.8);
+  margin: auto;
+  position: relative;
+  box-shadow: 1rem 1rem 5rem #444;
+}
+
+.gallery-shelf::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10rem;
+  background-color: rgba(34, 152, 248, 0.7);
+  top: -10rem;
+  transform: rotateX(20deg);
+  transform-origin: bottom;
+}
+
+.gallery img {
+  width: 15%;
+  position: absolute;
+  bottom: 6rem;
+  transform: translateX(-50%) rotateX(0.5deg);
+  box-shadow: 0.2rem -0.2rem 0.5rem #888;
+  border-radius: 0.5rem;
+  transform-origin: bottom;
+  transition: all 0.3s;
+}
+
+.gallery img:hover {
+  transform: translateX(-50%) rotateX(0);
+  box-shadow: 0 0.2rem 0.3rem #888;
+}
+
+.gallery-img-1 {
+  left: 50%;
+}
+
+.gallery-img-2 {
+  left: 30%;
+}
+
+.gallery-img-3 {
+  left: 70%;
+}
+/* End of Section 4 */
